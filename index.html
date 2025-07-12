@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CDN for exchange icon -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papnmX5onlFOSY/mzjciR2Y4kUphELD0T4cGHMmKcAnJAr9Mj9p3tnyTzCFlh1llldXtqvZTVjzR6f1G2BM3Vg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <div class="container">
+    <h2>Currency Converter</h2>
+    <form>
+      <div class="amount">
+        <p>Enter Amount</p>
+        <input type="text" value="100" />
+      </div>
+
+      <div class="dropdown">
+        <div class="from">
+          <p>From</p>
+          <div class="select-container">
+            <img id="from-flag" src="https://flagsapi.com/AU/shiny/64.png" alt="From Flag" />
+            <select name="from" id="from-currency">
+              <!-- Options will be populated via JavaScript -->
+            </select>
+          </div>
+        </div>
+
+        <i class="fas fa-exchange-alt"></i>
+
+        <div class="to">
+          <p>To</p>
+          <div class="select-container">
+            <img id="to-flag" src="https://flagsapi.com/IN/shiny/64.png" alt="To Flag" />
+            <select name="to" id="to-currency">
+              <!-- Options will be populated via JavaScript -->
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="msg">1 USD = 80 INR</div>
+      <button type="button" id="convert-btn">Get Exchange Rate</button>
+    </form>
+  </div>
+
+  <script src="codes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
